@@ -1,0 +1,71 @@
+<footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">{{ site.title | escape }}</h5>
+          <p class="grey-text text-lighten-4">{{ site.description | escape }}</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Контакты</h5>
+        <ul class="white-text">
+          <li>
+            {% if site.author %}
+              {{ site.author | escape }}
+            {% else %}
+              {{ site.title | escape }}
+            {% endif %}
+            </li>
+            {% if site.email %}
+            <li><a class="white-text" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% endif %}
+        </ul>
+        </div>
+
+        <div class="col l3 s12">
+          <h5 class="white-text">Соц. сети</h5>
+        <ul class="white-text">
+          <p class="white-text">
+          {% if site.github_username %}
+          <li>
+           {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+          </p> 
+        </ul>
+        </div>
+      </div>
+    </div> 
+
+
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="{{ "/" | relative_url }}">{{ site.author | escape }}</a>
+      </div>
+    </div>
+
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/init.js" ></script>
+
+
+  </footer>
+
+
+
+
+
+
+
+
