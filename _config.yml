@@ -19,7 +19,7 @@ author: Danil
 description: > # this means to ignore newlines until "baseurl:"
 
 paralax-img: /dmatcss/img/29092.jpg
-paralax-title: Materialize CSS
+paralax-title: Mega Materialize CSS
 paralax-description: Тема для Jekyll построенная с использованием фреймворка Materialize CSS Постараюсь сделать её максимально удобной для использования из коробки и возможно опубликую в каком-нибудь каталоге тем для Jekyll
 paralax-button: Materialize CSS
 paralax-button-url: http://materializecss.com/getting-started.html
